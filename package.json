@@ -13,5 +13,13 @@
   },
   "bin": {
     "create-graphql-api": "index.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelnsantos/create-graphql-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rafaelnsantos/create-graphql-api/issues"
+  },
+  "homepage": "https://github.com/rafaelnsantos/create-graphql-api#readme"
 }
