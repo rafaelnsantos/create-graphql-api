@@ -9,9 +9,9 @@
     "codegen": "graphql-api-scripts codegen"
   },
   "author": "",
-  "license": "",
+  "license": "ISC",
   "dependencies": {
-    "graphql-api-scripts": "^0.0.21"
+    "graphql-api-scripts": "^0.0.22"
   },
   "devDependencies": {
     "graphql-api-scripts-dev": "^0.0.21"
