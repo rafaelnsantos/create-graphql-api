@@ -1,6 +1,6 @@
 {
   "name": "create-graphql-express",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Set up a GraphQL API by running one command.",
   "keywords": [],
   "author": "rafaelnsantos",
@@ -10,7 +10,7 @@
     "shelljs": "^0.8.3"
   },
   "bin": {
-    "create-api-graphql": "index.js"
+    "create-graphql-express": "index.js"
   },
   "repository": {
     "type": "git",
