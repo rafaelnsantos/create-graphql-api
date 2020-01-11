@@ -1,19 +1,19 @@
 {
-  "name": "[NAME]",
-  "version": "[VERSION]",
-  "description": "[DESCRIPTION]",
+  "name": "api-graphql",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
     "dev": "graphql-api-scripts dev",
     "start": "graphql-api-scripts start",
     "build": "graphql-api-scripts build",
     "codegen": "graphql-api-scripts codegen"
   },
-  "author": "[AUTHOR]",
-  "license": "[LICENSE]",
+  "author": "",
+  "license": "",
   "dependencies": {
-    "graphql-api-scripts": "^0.0.20"
+    "graphql-api-scripts": "^0.0.21"
   },
   "devDependencies": {
-    "graphql-api-scripts-dev": "^0.0.20"
+    "graphql-api-scripts-dev": "^0.0.21"
   }
 }
