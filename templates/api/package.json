@@ -6,14 +6,29 @@
     "dev": "graphql-api-scripts dev",
     "start": "graphql-api-scripts start",
     "build": "graphql-api-scripts build",
-    "codegen": "graphql-api-scripts codegen"
+    "test": "jest --runInBand"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "graphql-api-scripts": "^0.0.22"
+    "graphql-api-scripts": "^0.0.35",
+    "graphql-relay": "^0.6.0"
   },
   "devDependencies": {
-    "graphql-api-scripts-dev": "^0.0.21"
+    "@types/graphql-relay": "^0.4.11",
+    "@types/jest": "^24.0.25",
+    "@types/supertest": "^2.0.8",
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "graphql-api-scripts-dev": "^0.0.23",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.3.0"
   }
 }
