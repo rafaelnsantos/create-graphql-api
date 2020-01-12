@@ -5,17 +5,16 @@ enum OPERATION {
   multiply
 }
 
-input CalcInput {
+input CalculateInput {
   n1: Float!
   operation: OPERATION!
   n2: Float!
 }
 
-type CalcPayload {
+type CalculatePayload {
   response: Float
-  error: String
 }
 
 type Mutation {
-  calculate(input: CalcInput!): CalcPayload!
+  calculate(input: CalculateInput!): CalculatePayload!
 }

@@ -7,10 +7,10 @@ export interface User extends Document {
 
 export type UserModel = Model<User>
 
-module.exports = (mongoose: Mongoose): UserModel => {
+export default (mongoose: Mongoose): UserModel => {
   const { Schema, model } = mongoose
 
-  const schema = {
+  const schema = new Schema<UserModel>({
     uid: {
       type: String,
       required: true
@@ -19,10 +19,9 @@ module.exports = (mongoose: Mongoose): UserModel => {
       type: String,
       required: true
     }
-  }
-  const userSchema = new Schema(schema, { timestamps: true })
+  }, { timestamps: true })
 
-  userSchema.index({ uid: 'text' }, { unique: true })
+  schema.index({ uid: 'text' }, { unique: true })
 
-  return model('User', userSchema)
+  return model('User', schema)
 }

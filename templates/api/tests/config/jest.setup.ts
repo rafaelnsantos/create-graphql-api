@@ -1,16 +1,18 @@
 import { app, repositories } from 'graphql-api-scripts'
 import { Repositories } from '../../src/repositories/repositories'
+import { Server } from 'http'
 
-const { mongoose }: Repositories = repositories
+const { mongoose, redis }: Repositories = repositories
 
-let instance
+let instance: Server
 
-beforeAll(() => {
+beforeAll(done => {
   instance = app.listen()
-  return instance
+  done()
 })
 
-afterAll(async () => {
+afterAll(async done => {
   await mongoose._disconnect()
-  return instance.close()
+  await redis._disconnect()
+  instance.close(done)
 })

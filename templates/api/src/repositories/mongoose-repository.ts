@@ -1,10 +1,9 @@
-import MongooseRepository, { Repository } from '../plugins/mongoose-repository-plugin'
 import { UserModel } from './mongoose/user-model'
+import { Repository } from '../plugins/repository/types'
+import { MongooseRepository } from '../plugins/repository/mongoose-repository-plugin'
 
-export interface MongooseModels extends Repository {
-  models: {
-    User: UserModel;
-  };
+export interface MongooseRepository extends Repository {
+  User: UserModel;
 }
 
 export default MongooseRepository('mongoose', {

@@ -1,15 +1,15 @@
 import { graphql } from './queryBuilder'
-import { CalcInput, Operation } from '../src/generated/schema'
+import { Operation, CalculateInput } from '../src/generated/schema'
 
-const query = graphql<CalcInput>(`
-mutation ($input: CalcInput!){
+const query = graphql<CalculateInput>(`
+mutation ($input: CalculateInput!){
   payload: calculate(input: $input) {
     response
   }
 }
 `)
 
-describe('calc mutation test', () => {
+describe('mutation calculate', () => {
   it('deve realizar soma', () => {
     query.variables = {
       input: {
@@ -18,8 +18,7 @@ describe('calc mutation test', () => {
         n2: 15
       }
     }
-    return global.request()
-      .send(query)
+    return global.request(query)
       .expect(res => expect(res.body.data.payload.response).toBe(25))
   })
 
@@ -31,8 +30,7 @@ describe('calc mutation test', () => {
         n2: 15
       }
     }
-    return global.request()
-      .send(query)
+    return global.request(query)
       .expect(res => expect(res.body.data.payload.response).toBe(2))
   })
 
@@ -44,8 +42,7 @@ describe('calc mutation test', () => {
         n2: 15
       }
     }
-    return global.request()
-      .send(query)
+    return global.request(query)
       .expect(res => expect(res.body.data.payload.response).toBe(5))
   })
 
@@ -57,8 +54,7 @@ describe('calc mutation test', () => {
         n2: 15
       }
     }
-    return global.request()
-      .send(query)
+    return global.request(query)
       .expect(res => expect(res.body.data.payload.response).toBe(150))
   })
 })
