@@ -1,4 +1,7 @@
-import { app } from 'graphql-api-scripts'
+import { app, repositories } from 'graphql-api-scripts'
+import { Repositories } from '../../src/repositories/repositories'
+
+const { mongoose }: Repositories = repositories
 
 let instance
 
@@ -8,5 +11,6 @@ beforeAll(() => {
 })
 
 afterAll(async () => {
+  await mongoose._disconnect()
   return instance.close()
 })
