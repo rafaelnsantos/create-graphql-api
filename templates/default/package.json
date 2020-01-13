@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "predev": "graphql-api-scripts codegen",
     "dev": "graphql-api-scripts dev",
     "start": "graphql-api-scripts start",
     "prebuild": "graphql-api-scripts codegen",
