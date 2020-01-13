@@ -1,6 +1,6 @@
 {
   "name": "create-graphql-express",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Set up a GraphQL API by running one command.",
   "keywords": [],
   "author": "rafaelnsantos",
