@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "graphql-api-scripts": "^0.0.48",
+    "graphql-api-scripts": "^0.0.49",
     "graphql-relay": "^0.6.0"
   },
   "devDependencies": {

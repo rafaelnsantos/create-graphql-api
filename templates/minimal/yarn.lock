@@ -3410,10 +3410,10 @@ graphql-api-scripts-dev@^0.0.25:
     tsc-prog "^2.1.0"
     typescript "^3.7.4"
 
-graphql-api-scripts@^0.0.48:
-  version "0.0.48"
-  resolved "https://registry.yarnpkg.com/graphql-api-scripts/-/graphql-api-scripts-0.0.48.tgz#e5f38cef5b53c3c8e741df6cafa74e2bafbc4f23"
-  integrity sha512-mtgvIyyavQVVmK7XX+J+J9FzSmRj8zgKVA2kRIXIU74M3lEGXrbQjOB/2rbWaWANpfkK+Q1ODjOxly6XYBYvHQ==
+graphql-api-scripts@^0.0.49:
+  version "0.0.49"
+  resolved "https://registry.yarnpkg.com/graphql-api-scripts/-/graphql-api-scripts-0.0.49.tgz#d1ef1ae9f3e0a57088def970df58a91a82fdc505"
+  integrity sha512-BeW3BtqHo8t54WJCu4jA1ks8qgViRDZZAN5Oq3ywPOJGXW+N4GlmhAJ3LJq2Yvsw+OpjPN+4VLwddRoOQEcy5g==
   dependencies:
     apollo-server-express "^2.9.15"
     express "^4.17.1"

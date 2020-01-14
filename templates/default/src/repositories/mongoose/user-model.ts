@@ -7,9 +7,7 @@ export interface User extends Document {
 
 export type UserModel = Model<User>
 
-export default (mongoose: Mongoose): UserModel => {
-  const { Schema, model } = mongoose
-
+export default ({ Schema, model }: Mongoose): UserModel => {
   const schema = new Schema<UserModel>({
     uid: {
       type: String,

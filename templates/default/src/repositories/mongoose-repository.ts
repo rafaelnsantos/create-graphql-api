@@ -1,6 +1,6 @@
 import { UserModel } from './mongoose/user-model'
-import { Repository } from '../plugins/repository/types'
-import { MongooseRepository } from '../plugins/repository/mongoose-repository-plugin'
+import { Repository } from 'graphql-api-scripts'
+import { MongooseRepository } from 'mongoose-repository-plugin'
 
 export interface MongooseRepository extends Repository {
   User: UserModel;
