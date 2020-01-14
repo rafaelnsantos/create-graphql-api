@@ -4,8 +4,7 @@ import { Server } from 'http'
 let instance: Server
 
 beforeAll(done => {
-  instance = app.listen()
-  done()
+  instance = app.listen(done)
 })
 
 afterAll(async done => {

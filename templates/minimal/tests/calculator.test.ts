@@ -1,7 +1,7 @@
-import { graphql } from './queryBuilder'
+import { createQuery } from 'graphql-api-scripts'
 import { Operation, CalculateInput } from '../src/generated/schema'
 
-const query = graphql<CalculateInput>(`
+const query = createQuery<CalculateInput>(`
 mutation ($input: CalculateInput!){
   payload: calculate(input: $input) {
     response

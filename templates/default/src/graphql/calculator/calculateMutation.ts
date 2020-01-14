@@ -1,6 +1,6 @@
-import { Input } from '../../generated/types'
+import { Context } from '../../generated/types'
 import { Operation, CalculateInput, CalculatePayload } from '../../generated/schema'
-import { Context } from '../../types'
+import { Input } from 'graphql-api-scripts'
 
 export const resolver = {
   Mutation: {

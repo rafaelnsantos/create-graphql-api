@@ -1,4 +1,4 @@
-import { Context } from '../types'
+import { Context } from '../generated/types'
 import { CODES } from '../errors'
 import CacheUtil from './cache-util'
 
