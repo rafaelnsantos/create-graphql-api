@@ -1,1 +1,6 @@
-directive @auth on FIELD_DEFINITION
+directive @auth(roles: [Role]) on FIELD_DEFINITION
+
+enum Role {
+  ADMIN
+  MANAGER
+}
