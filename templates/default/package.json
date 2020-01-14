@@ -39,7 +39,6 @@
     "eslint-plugin-standard": "^4.0.1",
     "graphql-api-scripts-dev": "^0.0.25",
     "jest": "^24.9.0",
-    "jsonwebtoken": "^8.5.1",
     "supertest": "^4.0.2",
     "ts-jest": "^24.3.0"
   }
