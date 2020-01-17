@@ -26,8 +26,9 @@ Then open [http://localhost:3000/graphql](http://localhost:3000/graphql) to see 
 When you’re ready to deploy to production, create a minified bundle with `npm run build`.
 
 <p align='center'>
-<img src='https://cdn.jsdelivr.net/gh/facebook/create-react-app@27b42ac7efa018f2541153ab30d63180f5fa39e0/screencast.svg' width='600' alt='npm start'>
+<img src='https://user-images.githubusercontent.com/4512966/72631948-00a33500-3934-11ea-8261-902fbca316ef.gif' width='600' alt='npm start'>
 </p>
+![create-graphql-express]()
 
 ### Get Started Immediately
 
@@ -50,14 +51,15 @@ npx create-graphql-express my-api
 
 _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) is a package runner tool that comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
 
-```
-my-app
+```sh
+my-api
 ├── jest.config.js
 ├── package.json
 ├── src
 |  ├── errors.ts
 |  ├── generated
-|  |  └── schema.ts
+|  |  ├── schema.ts
+|  |  └── types.d.ts
 |  ├── graphql
 |  |  ├── calculator
 |  |  |  ├── calculateMutation.ts
@@ -71,7 +73,6 @@ my-app
 |  |  └── repositories.d.ts
 |  ├── services
 |  |  └── services.d.ts
-|  ├── types.d.ts
 |  └── utils
 |     └── utils.d.ts
 ├── tests
@@ -88,7 +89,7 @@ No configuration or complicated folder structures, only the files you need to bu
 Once the installation is done, you can open your project folder:
 
 ```sh
-cd my-app
+cd my-api
 ```
 
 Inside the newly created project, you can run some built-in commands:
@@ -101,9 +102,9 @@ Open [http://localhost:3000/graphql](http://localhost:3000/graphql) to view it i
 The API will automatically generate types from the graphql schema and reload if you make changes to the code.<br>
 You will see the build errors and lint warnings in the console.
 
-<p align='center'>
+<!-- <p align='center'>
 <img src='https://cdn.jsdelivr.net/gh/marionebl/create-react-app@9f6282671c54f0874afd37a72f6689727b562498/screencast-error.svg' width='600' alt='Build errors'>
-</p>
+</p> -->
 
 ### `npm test` or `yarn test`
 
@@ -135,7 +136,7 @@ Please refer to the [User Guide](https://rafaelnsantos.github.io/create-graphql-
 
 ## What’s Included?
 
-Your environment will have everything you need to build a modern GraphQL API:
+Your environment will have everything you need to build a GraphQL API:
 
 - ES6, TypeScript and syntax support.
 - Auto generated types from GraphQL schema.
