@@ -1,5 +1,5 @@
-import { createQuery } from 'graphql-api-scripts'
 import { Operation, CalculateInput } from '../src/generated/schema'
+import { createQuery } from 'graphql-api-scripts'
 
 const query = createQuery<CalculateInput>(`
 mutation ($input: CalculateInput!){

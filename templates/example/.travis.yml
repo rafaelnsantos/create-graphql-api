@@ -6,6 +6,10 @@ cache:
   - npm
   - yarn
 
+services:
+  - mongodb
+  - redis-server
+
 install:
   - yarn
 
