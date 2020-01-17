@@ -28,7 +28,6 @@ When you’re ready to deploy to production, create a minified bundle with `npm 
 <p align='center'>
 <img src='https://user-images.githubusercontent.com/4512966/72631948-00a33500-3934-11ea-8261-902fbca316ef.gif' width='600' alt='npm start'>
 </p>
-![create-graphql-express]()
 
 ### Get Started Immediately
 
