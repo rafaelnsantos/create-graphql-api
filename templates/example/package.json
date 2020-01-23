@@ -18,7 +18,7 @@
     "graphql-api-scripts": "^0.0.60",
     "graphql-relay": "^0.6.0",
     "mongoose-repository-plugin": "^1.0.7",
-    "redis-repository-plugin": "^1.0.1"
+    "redis-repository-plugin": "^1.0.2"
   },
   "devDependencies": {
     "@playlyfe/gql": "^2.6.2",
