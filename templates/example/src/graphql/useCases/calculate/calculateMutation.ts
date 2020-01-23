@@ -1,5 +1,5 @@
-import { Context } from '../../generated/types'
-import { Operation, CalculateInput, CalculatePayload } from '../../generated/schema'
+import { Context } from '~/generated/types'
+import { Operation, CalculateInput, CalculatePayload } from '~/generated/schema'
 import { Input } from 'graphql-api-scripts'
 
 export const resolver = {
