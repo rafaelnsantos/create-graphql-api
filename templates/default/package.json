@@ -18,6 +18,7 @@
     "graphql-relay": "^0.6.0"
   },
   "devDependencies": {
+    "@playlyfe/gql": "^2.6.2",
     "@types/graphql-relay": "^0.4.11",
     "@types/jest": "^24.0.25",
     "@types/node-cron": "^2.0.2",
