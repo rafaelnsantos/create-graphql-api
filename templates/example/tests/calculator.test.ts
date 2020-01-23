@@ -1,4 +1,4 @@
-import { Operation, CalculateInput } from '../src/generated/schema'
+import { Operation, CalculateInput } from '~/generated/schema'
 import { createQuery } from 'graphql-api-scripts'
 
 const query = createQuery<CalculateInput>(`
@@ -10,6 +10,8 @@ mutation ($input: CalculateInput!){
 `)
 
 describe('mutation calculate', () => {
+  const { request } = global
+
   it('deve realizar soma', () => {
     query.variables = {
       input: {
@@ -18,7 +20,7 @@ describe('mutation calculate', () => {
         n2: 15
       }
     }
-    return global.request(query)
+    return request(query)
       .expect(res => expect(res.body.data.payload.response).toBe(25))
   })
 
@@ -30,7 +32,7 @@ describe('mutation calculate', () => {
         n2: 15
       }
     }
-    return global.request(query)
+    return request(query)
       .expect(res => expect(res.body.data.payload.response).toBe(2))
   })
 
@@ -42,7 +44,7 @@ describe('mutation calculate', () => {
         n2: 15
       }
     }
-    return global.request(query)
+    return request(query)
       .expect(res => expect(res.body.data.payload.response).toBe(5))
   })
 
@@ -54,7 +56,7 @@ describe('mutation calculate', () => {
         n2: 15
       }
     }
-    return global.request(query)
+    return request(query)
       .expect(res => expect(res.body.data.payload.response).toBe(150))
   })
 })
