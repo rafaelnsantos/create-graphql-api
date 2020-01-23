@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "graphql-api-scripts": "^0.0.58",
+    "graphql-api-scripts": "^0.0.60",
     "graphql-relay": "^0.6.0"
   },
   "devDependencies": {
@@ -29,5 +29,8 @@
     "jest": "^24.9.0",
     "supertest": "^4.0.2",
     "ts-jest": "^24.3.0"
+  },
+  "_moduleAliases": {
+    "~": "build"
   }
 }
